@@ -17,11 +17,16 @@
 
  <title>TATA PLAY WEB</title>
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
- <script>
-         // alert('Join Our Telegram For Latest update')
-         if (confirm("Join Our WhatsApp Channel For Latest Update, This Website Is Totaly Ads Crictv.tv") == true) {
-                 window.open("https://whatsapp.com/channel/0029Va4L4Pl1nozD6gNTB80F", '_blank');
+<script>
+         // Detect Android webviews by checking the User-Agent
+         var ua = navigator.userAgent.toLowerCase();
+         if (ua.indexOf('wv') > -1) {
+                 // This is a webview, show an alert message
+                 alert('I think you are using unofficial app you can use our website to watch live TV for free. Please use a regular browser. At https://crictv.tv');
+                 window.location.href = "https://telegram.me/dtv_hindi";
+ 
          }
+        
  </script>
 
  <style>
